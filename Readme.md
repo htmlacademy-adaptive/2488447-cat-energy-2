@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дарья Дериглазова](https://up.htmlacademy.ru/adaptive-individual/2/user/2488447).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
