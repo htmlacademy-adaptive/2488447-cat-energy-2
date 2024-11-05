@@ -38,8 +38,8 @@
   <main class="main">
     <section class="catalog">
       <div class="catalog__wrapper wrapper">
-        <h1 class="catalog__title">Каталог продукции</h1>
-         <ul class="catalog__list">
+        <h1 class="catalog__title title">Каталог продукции</h1>
+          <ul class="catalog__list">
           <li class="catalog__item product">
             <a class="product__link" href="#">
               <picture>
@@ -69,7 +69,7 @@
                 <td class="product__table-cell product__table-cell--value">700 ₽</td>
               </tr>
             </table>
-            <a class="product__button button" href="#">Заказать</a>
+            <a class="product__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
               <a class="product__link" href="#">
@@ -100,7 +100,7 @@
                 <td class="product__table-cell product__table-cell--value">1000 ₽</td>
               </tr>
             </table>
-            <a class="product__button button" href="#">Заказать</a>
+            <a class="product__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
               <a class="product__link" href="#">
@@ -131,7 +131,7 @@
                 <td class="product__table-cell product__table-cell--value">700 ₽</td>
               </tr>
             </table>
-            <a class="product__button button" href="#">Заказать</a>
+            <a class="product__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
               <a class="product__link" href="#">
@@ -162,7 +162,7 @@
                 <td class="product__table-cell product__table-cell--value">1000 ₽</td>
               </tr>
             </table>
-            <a class="product__button button" href="#">Заказать</a>
+            <a class="product__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
               <a class="product__link" href="#">
@@ -193,7 +193,7 @@
                 <td class="product__table-cell product__table-cell--value">400 ₽</td>
               </tr>
             </table>
-            <a class="product__button button" href="#">Заказать</a>
+            <a class="product__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
               <a class="product__link" href="#">
@@ -224,7 +224,7 @@
                 <td class="product__table-cell product__table-cell--value">700 ₽</td>
               </tr>
             </table>
-            <a class="product__button button" href="#">Заказать</a>
+            <a class="product__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
               <a class="product__link" href="#">
@@ -235,7 +235,7 @@
                 </picture>
               </a>
             <a class="product__link" href="#">
-              <h3 class="product__title">Cat Energy SLIM  1000&nbsp;г</h3>
+              <h3 class="product__title">Cat Energy SLIM  500&nbsp;г</h3>
             </a>
             <table class="product__table">
               <tr>
@@ -255,13 +255,13 @@
                 <td class="product__table-cell product__table-cell--value">500 ₽</td>
               </tr>
             </table>
-            <a class="product__button button" href="#">Заказать</a>
+            <a class="product__button button button--primary" href="#">Заказать</a>
           </li>
         </ul>
           <div class="catalog__how-more product-show-more">
             <h3 class="product-show-more__title">Показать еще 100500 товаров</h3>
             <p class="product-show-more__text">На самом деле вкусов гораздо больше!</p>
-            <a class="product-show-more__button button" href="#">Показать все</a>
+            <a class="product-show-more__button button button--secondary" href="#">Показать все</a>
           </div>
         </div>
       </section>
@@ -281,7 +281,7 @@
                 <td class="other-goods__table-cell other-goods__table-cell--price">200 ₽</td>
               </tr>
             </table>
-            <a class="other-goods__button button" href="#">Заказать</a>
+            <a class="other-goods__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="additional-products__item other-goods">
             <h3 class="other-goods__title">Питьевая вода</h3>
@@ -295,7 +295,7 @@
                 <td class="other-goods__table-cell other-goods__table-cell--price">50 ₽</td>
               </tr>
             </table>
-            <a class="other-goods__button button" href="#">Заказать</a>
+            <a class="other-goods__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="additional-products__item other-goods">
             <h3 class="other-goods__title">Молоко</h3>
@@ -309,7 +309,7 @@
                 <td class="other-goods__table-cell other-goods__table-cell--price">100 ₽</td>
               </tr>
             </table>
-            <a class="other-goods__button button" href="#">Заказать</a>
+            <a class="other-goods__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="additional-products__item other-goods">
             <h3 class="other-goods__title">Витамины</h3>
@@ -323,7 +323,7 @@
                 <td class="other-goods__table-cell other-goods__table-cell--price">300 ₽</td>
               </tr>
             </table>
-            <a class="other-goods__button button" href="#">Заказать</a>
+            <a class="other-goods__button button button--primary" href="#">Заказать</a>
           </li>
         </ul>
         <div class="additional-products__promo promo">
@@ -337,12 +337,12 @@
         <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscribe__form form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email-id">Укажите ваш email</label>
-          <input class="form__field" type="text" placeholder="кuklachev@gmail.com" name="email" id="email-id" required>
-          <button class="form__button button" type="submit">Подписаться</button>
+          <input class="form__field" type="text" value="кuklachev@gmail.com" placeholder="кuklachev@gmail.com" name="email" id="email-id" required>
+          <button class="form__button button button--primary" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
-    <section class="location">
+    <section class="location location--page">
       <div class="location__wrapper">
         <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="location__address">

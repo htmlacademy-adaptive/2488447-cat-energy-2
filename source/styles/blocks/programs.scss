@@ -1,0 +1,25 @@
+.programs__title {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: $base-color-text-dark;
+}
+
+.programs__list {
+  list-style-type: none;
+}
+
+.programs__item {
+  background-color: $base-color-gray;
+}
+
+.programs__link {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: $base-color-text-dark;
+  text-decoration: none;
+  text-transform: uppercase;
+}
