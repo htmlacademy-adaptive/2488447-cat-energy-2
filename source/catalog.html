@@ -15,10 +15,21 @@
   <header class="header">
     <div class="header__wrapper wrapper">
       <a class="header__logo logo" href="index.html">
-        <img class="logo__image logo__image--icon" src="#" width="33" height="38" alt="Логотип сайта кэт энерджи">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50">
+          <img class="logo__image logo__image--icon" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип сайта кэт энерджи">
+        </picture>
+      </a>
+      <a class="header__logo-text logo" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18">
+          <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="101" height="20" alt="Текстовый логотип сайта кэт энерджи">
+        </picture>
       </a>
       <nav class="nav">
-        <button class="nav__toggle button-toggle" type="button">
+        <button class="nav__toggle button-toggle button-toggle--close" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
           <ul class="nav__list">
@@ -258,7 +269,7 @@
             <a class="product__button button button--primary" href="#">Заказать</a>
           </li>
         </ul>
-          <div class="catalog__how-more product-show-more">
+          <div class="catalog__show-more product-show-more">
             <h3 class="product-show-more__title">Показать еще 100500 товаров</h3>
             <p class="product-show-more__text">На самом деле вкусов гораздо больше!</p>
             <a class="product-show-more__button button button--secondary" href="#">Показать все</a>
@@ -361,8 +372,8 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper wrapper">
-      <a class="footer__logo logo" href="#">
-        <img class="logo-image logo-image--text" src="index.html" width="128" height="24" alt="Логотип сайта кэт энерджи">
+      <a class="footer__logo logo" href="index.html">
+        <img class="logo__image logo__image--text" src="images/logo-text-mobile-tablet-desktop.svg" width="128" height="24" alt="Текстовый Логотип сайта кэт энерджи">
       </a>
       <section class="footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -385,8 +396,11 @@
         </ul>
       </section>
       <p class="footer__developer developer">
-        <a class="developer__link" href="https://htmlacademy.ru/">
+        <a class="developer__link developer__link--text" href="https://htmlacademy.ru/">
           <span class="developer__text">HTML Academy</span>
+        </a>
+        <a class="developer__link developer__link--image" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Логотип HTML Academy</span>
         </a>
       </p>
     </div>

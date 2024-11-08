@@ -12,6 +12,18 @@
 
 .programs__item {
   background-color: $base-color-gray;
+
+  &--slim {
+    background-image: url("../../icons/stack.svg#cat-slim");
+    background-repeat: no-repeat;
+    background-size: 50px 53px;
+  }
+
+  &--pro {
+    background-image: url("../../icons/stack.svg#cat-pro");
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+  }
 }
 
 .programs__link {
@@ -22,4 +34,19 @@
   color: $base-color-text-dark;
   text-decoration: none;
   text-transform: uppercase;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 12px;
+    mask-image: url("../../icons/stack.svg#arrow");
+    mask-size: 24px 12px;
+    mask-repeat: no-repeat;
+    background-color: $base-color-text-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

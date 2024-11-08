@@ -6,3 +6,27 @@
   text-align: center;
   color: $base-color-text-dark;
 }
+
+.features__item--elements {
+  background-image: url("../../icons/stack.svg#elements-icon");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.features__item--cooking {
+  background-image: url("../../icons/stack.svg#cooking-icon");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.features__item--application {
+  background-image: url("../../icons/stack.svg#application-icon");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.features__item--time {
+  background-image: url("../../icons/stack.svg#time-icon");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
