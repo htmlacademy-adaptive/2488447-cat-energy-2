@@ -2,6 +2,11 @@
   background-color: $base-color-gray;
 }
 
+.location__wrapper {
+  display: flex;
+  min-height: 112px;
+}
+
 .location__title {
   font-family: $primary-font;
   font-weight: 400;
@@ -14,4 +19,16 @@
 .location__address {
   line-height: 20px;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .location__wrapper {
+    min-height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__wrapper {
+    min-height: 199px;
+  }
 }

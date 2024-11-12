@@ -1,3 +1,7 @@
+.programs__wrapper {
+  min-height: 592px;
+}
+
 .programs__title {
   font-family: $primary-font;
   font-weight: 400;
@@ -7,10 +11,13 @@
 }
 
 .programs__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 .programs__item {
+  min-height: 266px;
   background-color: $base-color-gray;
 
   &--slim {
@@ -48,5 +55,31 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__wrapper {
+    min-height: 789px;
+  }
+
+  .programs__item {
+    min-height: 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__wrapper {
+    min-height: 527px;
+  }
+
+  .programs__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .programs__item {
+    width: 570px;
+    min-height: 374px;
   }
 }

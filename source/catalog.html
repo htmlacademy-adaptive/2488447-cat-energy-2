@@ -14,24 +14,26 @@
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper wrapper">
-      <a class="header__logo logo" href="index.html">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50">
-          <img class="logo__image logo__image--icon" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип сайта кэт энерджи">
-        </picture>
-      </a>
-      <a class="header__logo-text logo" href="index.html">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18">
-          <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="101" height="20" alt="Текстовый логотип сайта кэт энерджи">
-        </picture>
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle button-toggle button-toggle--close" type="button">
+      <div class="header__container">
+        <a class="header__logo logo" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50">
+            <img class="logo__image logo__image--icon" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип сайта кэт энерджи">
+          </picture>
+        </a>
+        <a class="header__logo-text logo" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18">
+            <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="101" height="20" alt="Текстовый логотип сайта кэт энерджи">
+          </picture>
+        </a>
+        <button class="header__toggle button-toggle button-toggle--close" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="index.html">Главная</a>
@@ -55,7 +57,7 @@
             <a class="product__link" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 1440px)" srcset="images/product-chicken-500-desktop@1x.png 1x, images/product-chicken-500-desktop@2x.png 2x" width="161" height="172">
-                <source type="image/png" media="(min-width: 768px)" srcset="images/product-chicken-500-tablet-desktop@1x.png 1x, images/product-chicken-500-tablet-desktop@2x.png 2x" width="161" height="172">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/product-chicken-500-tablet@1x.png 1x, images/product-chicken-500-tablet@2x.png 2x" width="161" height="172">
                 <img class="product__image" src="images/product-chicken-500-mobile@1x.png" srcset="images/product-chicken-500-mobile@2x.png 2x" width="68" height="86" alt="Продукт со вкусом курицы, 500 грамм">
               </picture>
             </a>
@@ -117,7 +119,7 @@
               <a class="product__link" href="#">
                 <picture>
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/product-fish-500-desktop@1x.png 1x, images/product-fish-500-desktop@2x.png 2x" width="163" height="174">
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/product-fish-500-tablet-desktop@1x.png 1x, images/product-fish-500-tablet-desktop@2x.png 2x" width="163" height="174">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/product-fish-500-tablet@1x.png 1x, images/product-fish-500-tablet@2x.png 2x" width="163" height="174">
                   <img class="product__image" src="images/product-fish-500-mobile@1x.png" srcset="images/product-fish-500-mobile@2x.png 2x" width="68" height="78" alt="Продукт со вкусом рыбы, 500 грамм">
                 </picture>
               </a>
@@ -179,7 +181,7 @@
               <a class="product__link" href="#">
                 <picture>
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/product-buckwheat-500-desktop@1x.png 1x, images/product-buckwheat-500-desktop@2x.png 2x" width="161" height="171">
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/product-buckwheat-500-tablet-desktop@1x.png 1x, images/product-buckwheat-500-tablet-desktop@2x.png 2x" width="161" height="171">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/product-buckwheat-500-tablet@1x.png 1x, images/product-buckwheat-500-tablet@2x.png 2x" width="161" height="171">
                   <img class="product__image" src="images/product-buckwheat-500-mobile@1x.png" srcset="images/product-buckwheat-500-mobile@2x.png 2x" width="68" height="78" alt="Продукт со вкусом гречки, 500 грамм">
                 </picture>
               </a>
@@ -241,7 +243,7 @@
               <a class="product__link" href="#">
                 <picture>
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/product-rice-500-desktop@1x.png 1x, images/product-rice-500-desktop@2x.png 2x" width="163" height="174">
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/product-rice-500-tablet-desktop@1x.png 1x, images/product-rice-500-tablet-desktop@2x.png 2x" width="163" height="174">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/product-rice-500-tablet@1x.png 1x, images/product-rice-500-tablet@2x.png 2x" width="163" height="174">
                   <img class="product__image" src="images/product-rice-500-mobile@1x.png" srcset="images/product-rice-500-mobile@2x.png 2x" width="72" height="84" alt="Продукт со вкусом риса, 500 грамм">
                 </picture>
               </a>
@@ -279,78 +281,80 @@
       <section class="additional-products">
         <div class="additional-products__wrapper wrapper">
           <h2 class="additional-products__title">Дополнительные товары</h2>
-          <ul class="additional-products__list">
-          <li class="additional-products__item other-goods">
-            <h3 class="other-goods__title">Сахарозаменитель</h3>
-            <table class="other-goods__table">
-              <tr>
-                <th class="visually-hidden">Размер упаковки</th>
-                <th class="visually-hidden">Цена</th>
-              </tr>
-              <tr>
-                <td class="other-goods__table-cell other-goods__table-cell--quantity">1 упаковка (100&nbsp;г)</td>
-                <td class="other-goods__table-cell other-goods__table-cell--price">200 ₽</td>
-              </tr>
-            </table>
-            <a class="other-goods__button button button--primary" href="#">Заказать</a>
-          </li>
-          <li class="additional-products__item other-goods">
-            <h3 class="other-goods__title">Питьевая вода</h3>
-            <table class="other-goods__table">
-              <tr>
-                <th class="visually-hidden">Размер упаковки</th>
-                <th class="visually-hidden">Цена</th>
-              </tr>
-              <tr>
-                <td class="other-goods__table-cell other-goods__table-cell--quantity">5 литров</td>
-                <td class="other-goods__table-cell other-goods__table-cell--price">50 ₽</td>
-              </tr>
-            </table>
-            <a class="other-goods__button button button--primary" href="#">Заказать</a>
-          </li>
-          <li class="additional-products__item other-goods">
-            <h3 class="other-goods__title">Молоко</h3>
-            <table class="other-goods__table">
-              <tr>
-                <th class="visually-hidden">Размер упаковки</th>
-                <th class="visually-hidden">Цена</th>
-              </tr>
-              <tr>
-                <td class="other-goods__table-cell other-goods__table-cell--quantity">1 литр</td>
-                <td class="other-goods__table-cell other-goods__table-cell--price">100 ₽</td>
-              </tr>
-            </table>
-            <a class="other-goods__button button button--primary" href="#">Заказать</a>
-          </li>
-          <li class="additional-products__item other-goods">
-            <h3 class="other-goods__title">Витамины</h3>
-            <table class="other-goods__table">
-              <tr>
-                <th class="visually-hidden">Размер упаковки</th>
-                <th class="visually-hidden">Цена</th>
-              </tr>
-              <tr>
-                <td class="other-goods__table-cell other-goods__table-cell--quantity">1 упаковка (30&nbsp;г)</td>
-                <td class="other-goods__table-cell other-goods__table-cell--price">300 ₽</td>
-              </tr>
-            </table>
-            <a class="other-goods__button button button--primary" href="#">Заказать</a>
-          </li>
-        </ul>
-        <div class="additional-products__promo promo">
-          <p class="promo-text">Закажите все и получите чехол для кота в подарок!</p>
-        </div>
-      </div>
-    </section>
-    <section class="subscribe">
-      <div class="subscribe__wrapper wrapper">
-        <h2 class="subscribe__title">Акции и новинки</h2>
-        <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-        <form class="subscribe__form form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="email-id">Укажите ваш email</label>
-          <input class="form__field" type="text" value="кuklachev@gmail.com" placeholder="кuklachev@gmail.com" name="email" id="email-id" required>
-          <button class="form__button button button--primary" type="submit">Подписаться</button>
-        </form>
+          <div class="additional-products__container">
+            <ul class="additional-products__list">
+              <li class="additional-products__item other-goods">
+                <h3 class="other-goods__title">Сахарозаменитель</h3>
+                <table class="other-goods__table">
+                  <tr>
+                    <th class="visually-hidden">Размер упаковки</th>
+                    <th class="visually-hidden">Цена</th>
+                  </tr>
+                  <tr>
+                    <td class="other-goods__table-cell other-goods__table-cell--quantity">1 упаковка (100&nbsp;г)</td>
+                    <td class="other-goods__table-cell other-goods__table-cell--price">200 ₽</td>
+                  </tr>
+                </table>
+                <a class="other-goods__button button button--primary" href="#">Заказать</a>
+              </li>
+              <li class="additional-products__item other-goods">
+                <h3 class="other-goods__title">Питьевая вода</h3>
+                <table class="other-goods__table">
+                  <tr>
+                    <th class="visually-hidden">Размер упаковки</th>
+                    <th class="visually-hidden">Цена</th>
+                  </tr>
+                  <tr>
+                    <td class="other-goods__table-cell other-goods__table-cell--quantity">5 литров</td>
+                    <td class="other-goods__table-cell other-goods__table-cell--price">50 ₽</td>
+                  </tr>
+                </table>
+                <a class="other-goods__button button button--primary" href="#">Заказать</a>
+              </li>
+              <li class="additional-products__item other-goods">
+                <h3 class="other-goods__title">Молоко</h3>
+                <table class="other-goods__table">
+                  <tr>
+                    <th class="visually-hidden">Размер упаковки</th>
+                    <th class="visually-hidden">Цена</th>
+                  </tr>
+                  <tr>
+                    <td class="other-goods__table-cell other-goods__table-cell--quantity">1 литр</td>
+                    <td class="other-goods__table-cell other-goods__table-cell--price">100 ₽</td>
+                  </tr>
+                </table>
+                <a class="other-goods__button button button--primary" href="#">Заказать</a>
+              </li>
+              <li class="additional-products__item other-goods">
+                <h3 class="other-goods__title">Витамины</h3>
+                <table class="other-goods__table">
+                  <tr>
+                    <th class="visually-hidden">Размер упаковки</th>
+                    <th class="visually-hidden">Цена</th>
+                  </tr>
+                  <tr>
+                    <td class="other-goods__table-cell other-goods__table-cell--quantity">1 упаковка (30&nbsp;г)</td>
+                    <td class="other-goods__table-cell other-goods__table-cell--price">300 ₽</td>
+                  </tr>
+                </table>
+                <a class="other-goods__button button button--primary" href="#">Заказать</a>
+              </li>
+            </ul>
+            <div class="additional-products__promo promo">
+              <p class="promo-text">Закажите все и получите чехол для кота в подарок!</p>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="subscribe">
+          <div class="subscribe__wrapper wrapper">
+            <h2 class="subscribe__title">Акции и новинки</h2>
+            <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+            <form class="subscribe__form form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="email-id">Укажите ваш email</label>
+              <input class="form__field" type="text" value="кuklachev@gmail.com" placeholder="кuklachev@gmail.com" name="email" id="email-id" required>
+              <button class="form__button button button--primary" type="submit">Подписаться</button>
+            </form>
       </div>
     </section>
     <section class="location location--page">
@@ -364,7 +368,7 @@
       <div class="location__map">
         <picture>
           <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, image/map-tablet@2x.png 2x" width="768" height="400">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
           <img class="location__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта места нахождения офиса">
         </picture>
       </div>

@@ -1,3 +1,28 @@
-.header {
-  //
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .header__wrapper {
+    display: flex;
+    min-height: 50px;
+  }
+
+  .header__container {
+    justify-content: flex-start;
+    margin-right: auto;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__wrapper {
+    min-height: 59px;
+  }
 }

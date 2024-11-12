@@ -14,25 +14,27 @@
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper wrapper">
-      <a class="header__logo logo" href="index.html">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50">
-          <img class="logo__image logo__image--icon" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип сайта кэт энерджи">
-        </picture>
-      </a>
-      <a class="header__logo-text logo" href="index.html">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18">
-          <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="101" height="20" alt="Текстовый логотип сайта кэт энерджи">
-        </picture>
-      </a>
-      <nav class="nav nav--index">
-        <button class="nav__toggle button-toggle button-toggle--close" type="button">
+      <div class="header__container">
+        <a class="header__logo logo" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50">
+            <img class="logo__image logo__image--icon" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип сайта кэт энерджи">
+          </picture>
+        </a>
+        <a class="header__logo-text logo" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18">
+            <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="101" height="20" alt="Текстовый логотип сайта кэт энерджи">
+          </picture>
+        </a>
+        <button class="header__toggle button-toggle button-toggle--close" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-          <ul class="nav__list">
+      </div>
+      <nav class="nav nav--index">
+        <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--current" href="index.html">Главная</a>
             </li>
@@ -115,7 +117,7 @@
         </div>
     </section>
     <section class="location">
-      <div class="location__wrapper">
+      <div class="location__wrapper wrapper">
         <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="location__address">
           <p class="location__street">ул. Большая Конюшенная, д. 19/8</p>
@@ -125,7 +127,7 @@
       <div class="location__map">
         <picture>
           <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, image/map-tablet@2x.png 2x" width="768" height="400">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
           <img class="location__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта места нахождения офиса">
         </picture>
       </div>

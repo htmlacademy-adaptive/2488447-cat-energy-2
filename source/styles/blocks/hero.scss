@@ -1,6 +1,14 @@
 .hero {
   font-family: $primary-font;
   color: $base-color-white;
+  font-weight: 400;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 480px;
 }
 
 .hero__title {
@@ -11,4 +19,25 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__wrapper {
+    align-items: flex-start;
+    min-height: 875px;
+
+    .hero__title {
+      color: $base-color-text-dark;
+    }
+
+    .hero__text {
+      color: $base-color-text-dark;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__wrapper {
+    min-height: 580px;
+  }
 }

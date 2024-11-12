@@ -1,8 +1,34 @@
+.additional-products__wrapper {
+  min-height: 904px;
+}
+
 .additional-products__title {
   font-family: $primary-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
   color: $base-color-text-dark;
+}
+
+.additional-products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-products__wrapper {
+    min-height: 938px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__wrapper {
+    min-height: 408px;
+  }
+
+  .additional-products__container {
+    display: grid;
+    grid-template-columns: auto 245px;
+  }
 }
