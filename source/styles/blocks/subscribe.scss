@@ -1,19 +1,46 @@
-.subscribe__wrapper {
-  min-height: 336px;
+.subscribe {
+  padding: 40px 0;
 }
 
 .subscribe__title {
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: $base-color-text-dark;
+  margin: 0 0 32px;
 }
 
 .subscribe__text {
+  margin: 0 auto 24px;
   font-family: $primary-font;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
   color: $base-color-text-dark;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .subscribe {
+    padding: 40px 0;
+  }
+
+  .subscribe__title {
+    margin: 0 0 67px 40px;
+  }
+
+  .subscribe__text {
+    padding: 0 38px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subscribe {
+    padding: 55px 0 52px;
+  }
+
+  .subscribe__title {
+    margin: 0 0 73px;
+  }
+
+  .subscribe__text {
+    padding: 0 20px;
+  }
 }

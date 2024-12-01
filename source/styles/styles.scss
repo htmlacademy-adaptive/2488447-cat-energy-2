@@ -7,6 +7,7 @@
 
 /* BLOCKS */
 @import "./blocks/page.scss";
+@import "./blocks/nojs.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/button.scss";
 @import "./blocks/title.scss";
@@ -14,7 +15,7 @@
 @import "./blocks/header.scss";
 @import "./blocks/wrapper.scss";
 @import "./blocks/logo.scss";
-@import "./blocks/nav.scss";
+@import "./blocks/main-nav.scss";
 @import "./blocks/button-toggle.scss";
 @import "./blocks/main.scss";
 @import "./blocks/hero.scss";
@@ -29,6 +30,7 @@
 @import "./blocks/catalog.scss";
 @import "./blocks/product.scss";
 @import "./blocks/product-show-more.scss";
+@import "./blocks/title-decor";
 @import "./blocks/additional-products.scss";
 @import "./blocks/other-goods.scss";
 @import "./blocks/promo.scss";

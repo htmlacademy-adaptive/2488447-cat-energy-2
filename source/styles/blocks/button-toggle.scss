@@ -1,13 +1,36 @@
 .button-toggle {
   width: 24px;
   height: 24px;
-  background-image: url("../../icons/stack.svg#button-burger");
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
-  background-color: $base-color-white;
-  border: none;
+  margin: 0;
+  padding: 0;
+  mask-repeat: no-repeat;
+  mask-position: right 50%;
+  background-color: $base-color-text-dark;
+  border: transparent;
+  cursor: pointer;
 
-  &--close {
-    background-image: url("../../icons/stack.svg#close-button");
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.button-toggle--closed {
+  mask-image: url("../../icons/stack.svg#button-burger");
+  mask-size: 24px 24px;
+}
+
+.button-toggle--opened {
+  mask-image: url("../../icons/stack.svg#close-button");
+  mask-size: 20px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .button-toggle {
+    display: none;
   }
 }

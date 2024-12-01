@@ -3,20 +3,40 @@
 }
 
 .footer__wrapper {
-  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid $decor-color-medium;
 }
 
 @media (min-width: $tablet-width) {
   .footer__wrapper {
-    display: flex;
+    flex-flow: wrap;
     justify-content: space-between;
     align-items: center;
-    min-height: 147px;
+    padding: 50px 0;
+  }
+
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    margin: 0 38px 0 0;
+    padding: 0;
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer__wrapper {
-    min-height: 169px;
+    padding: 62px 0;
   }
 }

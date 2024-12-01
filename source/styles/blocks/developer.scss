@@ -1,27 +1,39 @@
+.developer {
+  margin: 0;
+  padding: 0;
+}
+
 .developer__link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 140px;
+  max-width: 280px;
+  margin: 20px auto 40px;
   text-decoration: none;
 
-  &--image::before {
+  &::after {
     display: block;
     content: "";
     width: 27px;
     height: 34px;
     mask-image: url("../../icons/stack.svg#academy-logo");
     mask-repeat: no-repeat;
-    mask-size: 27px 30px;
+    mask-size: 27px 34px;
     background-color: $brand-color;
   }
 
-  &--text:active {
+  &:active .developer__text {
     opacity: 0.3;
   }
 
-  &--image:hover::before,
-  &--image:focus::before {
+  &:hover::after,
+  &:focus::after {
     background-color: $accent-color;
   }
 
-  &--image:active::before {
+  &:active::after {
     background-color: $accent-color;
     opacity: 0.3;
   }
@@ -31,4 +43,12 @@
   font-size: 16px;
   line-height: 20px;
   color: $base-color-text;
+}
+
+@media (min-width: $tablet-width) {
+  .developer__link {
+    column-gap: 23px;
+    max-width: 200px;
+    margin: 0;
+  }
 }
