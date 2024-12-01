@@ -100,7 +100,7 @@
       position: absolute;
       display: block;
       max-height: 697px;
-      height: calc(100% + 116px);
+      height: calc(100% + 110px);
       background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50% 50%), image-set("../images/index-background-desktop@1x.jpg" 1x type("image/jpeg"), "../images/index-background-desktop@2x.jpg" 2x type("image/jpeg")), linear-gradient(270deg, #3f3e46, #404145);
       background-color: $accent-color;
       background-repeat: no-repeat;

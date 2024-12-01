@@ -10,9 +10,11 @@
     <link rel="apple-touch-icon" href="favicons/favicon-180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
 <body class="page__body nojs">
-  <header class="header">
+  <header class="header" data-test="header">
     <div class="header__wrapper wrapper">
       <div class="header__logo-wrapper">
         <a class="header__logo logo" href="index.html">
@@ -42,14 +44,14 @@
               <a class="main-nav__link main-nav__link--current" href="catalog.html" aria-current="page">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Подбор программы</a>
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
       </nav>
     </div>
   </header>
   <main class="main">
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <div class="catalog__wrapper wrapper">
         <h1 class="catalog__title title">Каталог продукции</h1>
         <ul class="catalog__list">
@@ -287,7 +289,7 @@
         </ul>
       </div>
       </section>
-      <section class="additional-products">
+      <section class="additional-products" data-test="additional">
         <div class="additional-products__wrapper wrapper">
             <h2 class="additional-products__title title-decor">Дополнительные товары</h2>
             <ul class="additional-products__list">
@@ -340,7 +342,7 @@
             </form>
       </div>
     </section>
-    <section class="location location--page">
+    <section class="location location--page" data-test="contacts">
       <div class="location__wrapper wrapper">
         <h2 class="location__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
         <address class="location__address">
@@ -363,7 +365,7 @@
       </div>
       </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__wrapper wrapper">
       <a class="footer__logo logo" href="index.html">
         <img class="logo__image logo__image--text" src="images/logo-text-mobile-tablet-desktop.svg" width="128" height="24" alt="Текстовый Логотип сайта кэт энерджи">
