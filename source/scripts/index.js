@@ -22,7 +22,7 @@ burger.addEventListener('click', ()=> {
 });
 
 const slider = document.querySelector('.slider');
-const curtain = slider.querySelector('.slider__button-wrapper');
+const curtain = slider.querySelector('.slider__curtain');
 const sliderStyles = getComputedStyle(slider);
 let curtainPlaceStart;
 let clientX;

@@ -21,7 +21,7 @@
   }
 }
 
-.slider__button-wrapper {
+.slider__curtain {
   z-index: 1;
   display: grid;
   place-items: center;
@@ -44,7 +44,7 @@
   }
 }
 
-.slider__button {
+.slider__thumb {
   box-sizing: border-box;
   display: grid;
   margin: -18px;
